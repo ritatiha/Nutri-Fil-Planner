@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - NutriFit Planner</title>
+    <style>
+        body {
+            background: url('dumbells.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: rgb(0, 0, 0);
+        }
+
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .services-section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .services-section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #4CAF50;
+        }
+
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .service {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .service h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #4CAF50;
+        }
+
+        .service p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .service .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .service button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .service button:hover {
+            background: #45a049;
+        }
+
+        .comparison-table {
+            margin-top: 40px;
+            width: 80%;
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 800px;
+        }
+
+        .comparison-table th, .comparison-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            background: white;
+        }
+
+        .comparison-table th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            padding: 20px 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>NutriFit Planner</h1>
+        <nav>
+            <ul>
+                <li><a href="acceuil.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="reservation.html">Réservation</a></li>
+                <li><a href="clientinfo.html">Informations Client</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Services Section -->
+    <div class="services-section">
+        <h2>Nos Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <h3>Plans Nutritionnels</h3>
+                <p>Recevez des plans alimentaires personnalisés adaptés à vos objectifs de santé.</p>
+                <div class="price">À partir de 50€/mois</div>
+                <button onclick="window.location.href='reservation.html'">Réserver maintenant</button>
+            </div>
+
+            <div class="service">
+                <h3>Programmes Fitness</h3>
+                <p>Suivez des routines d'exercices conçues pour votre niveau et vos besoins.</p>
+                <div class="price">À partir de 40€/mois</div>
+                <button onclick="window.location.href='reservation.html'">Réserver maintenant</button>
+            </div>
+
+            <div class="service">
+                <h3>Suivi et Coaching</h3>
+                <p>Bénéficiez d'un accompagnement par des experts pour rester motivé.</p>
+                <div class="price">À partir de 100€/mois</div>
+                <button onclick="window.location.href='reservation.html'">Réserver maintenant</button>
+            </div>
+
+            <div class="service">
+                <h3>Recettes Santé</h3>
+                <p>Explorez des recettes équilibrées pour rendre vos repas délicieux et nutritifs.</p>
+                <div class="price">À partir de 10€/mois</div>
+                <button onclick="window.location.href='reservation.html'">Réserver maintenant</button>
+            </div>
+        </div>
+
+        <!-- Comparison Table -->
+        <h2>Comparez nos Programmes</h2>
+        <table class="comparison-table">
+            <tr>
+                <th>Critères</th>
+                <th>Plans Nutritionnels</th>
+                <th>Programmes Fitness</th>
+            </tr>
+            <tr>
+                <td>Objectif</td>
+                <td>Perte de poids, alimentation saine</td>
+                <td>Renforcement musculaire, endurance</td>
+            </tr>
+            <tr>
+                <td>Personnalisation</td>
+                <td>Menus adaptés aux besoins</td>
+                <td>Exercices selon le niveau</td>
+            </tr>
+            <tr>
+                <td>Suivi</td>
+                <td>Coaching nutritionnel</td>
+                <td>Plan d'entraînement encadré</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 NutriFit Planner. Tous droits réservés.</p>
+        <p><a href="#">Politique de confidentialité</a> | <a href="#">Contact</a></p>
+    </footer>
+</body>
+</html>

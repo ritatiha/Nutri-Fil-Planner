@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informations sur le Client - NutriFit Planner</title>
+    <style>
+         body {
+            background: url('dumbells.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: rgb(0, 0, 0);
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .client-info-section {
+            padding: 40px 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .client-info-section h2 {
+            font-size: 28px;
+            color: #4CAF50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        input, select, textarea {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background: #45a049;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            padding: 20px 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>NutriFit Planner</h1>
+        <nav>
+            <ul>
+                <li><a href="acceuil.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="reservation.html">Réservation</a></li>
+                <li><a href="clientinfo.html">Informations Client</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>        
+    </header>
+
+    <!-- Client Information Section -->
+    <div class="client-info-section">
+        <h2>Informations sur le Client</h2>
+        <form>
+            <label for="fullname">Nom complet</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Votre nom complet" required>
+
+            <label for="email">Adresse e-mail</label>
+            <input type="email" id="email" name="email" placeholder="Votre e-mail" required>
+
+            <label for="phone">Numéro de téléphone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Votre numéro de téléphone" required>
+
+            <label for="address">Adresse</label>
+            <input type="text" id="address" name="address" placeholder="Votre adresse complète">
+
+            <label for="health">Informations de santé (facultatif)</label>
+            <textarea id="health" name="health" rows="4" placeholder="Mentionnez des allergies ou des conditions médicales importantes..."></textarea>
+
+            <button type="submit">Enregistrer les informations</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 NutriFit Planner. Tous droits réservés.</p>
+        <p><a href="#">Politique de confidentialité</a> | <a href="#">Contact</a></p>
+    </footer>
+</body>
+</html>
