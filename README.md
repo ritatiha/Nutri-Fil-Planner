@@ -1,2 +1,2 @@
-# Nutri-FiT-Planner
+# Nutri-Fit-Planner
 Website prototype SEG3525
